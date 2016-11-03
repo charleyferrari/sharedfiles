@@ -143,7 +143,6 @@ with open(fname,'w') as f:
                 data['$properties'][u'platform_r'] = False
             email_list.append( [data['$properties']['$email'], data['$properties']['platform_python'],
                                 data['$properties'][u'platform_matlab'], data['$properties'][u'platform_r']] )
-            data_list.append(data)
             #f.write(data['$properties']['$email']+'\n')
         print "%d / %d" % (total,global_total)
         parameters['page'] += 1
